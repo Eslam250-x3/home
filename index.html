@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>فهرس كورس الذكاء الاصطناعي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            /* Add a subtle background pattern */
+            background-image: linear-gradient(to bottom right, #0f172a, #1e293b),
+                              radial-gradient(circle at top left, rgba(56, 189, 248, 0.1), transparent 50%),
+                              radial-gradient(circle at bottom right, rgba(34, 197, 94, 0.1), transparent 50%);
+            background-blend-mode: screen;
+        }
+        /* Enhanced button styles */
+        .custom-btn {
+            padding: 1rem 1.5rem; /* Adjusted padding */
+            border-radius: 0.75rem; /* Slightly more rounded */
+            font-weight: 600;
+            font-size: 1rem; /* Adjusted font size for better fit */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem; /* Adjusted gap */
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.15), 0 2px 6px -1px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+            user-select: none;
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+        }
+        .custom-btn:hover {
+            transform: translateY(-5px) scale(1.02); /* Increased lift and slight scale */
+            box-shadow: 0 12px 20px -4px rgba(0, 0, 0, 0.2), 0 5px 8px -2px rgba(0, 0, 0, 0.1); /* Stronger hover shadow */
+            filter: brightness(1.15);
+        }
+        .custom-btn:active {
+            transform: translateY(-1px) scale(0.99); /* Adjusted active effect */
+            box-shadow: 0 4px 8px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+            filter: brightness(0.9);
+        }
+        /* Icon size */
+        .custom-btn svg {
+            width: 20px; /* Slightly smaller icons */
+            height: 20px;
+        }
+        /* Specific button background gradients */
+        .btn-sky { background-image: linear-gradient(to right, #0ea5e9, #38bdf8); }
+        .btn-emerald { background-image: linear-gradient(to right, #10b981, #34d399); }
+        .btn-purple { background-image: linear-gradient(to right, #a855f7, #c084fc); }
+        .btn-rose { background-image: linear-gradient(to right, #f43f5e, #fb7185); }
+        .btn-amber { background-image: linear-gradient(to right, #f59e0b, #fbbf24); }
+        .btn-teal { background-image: linear-gradient(to right, #14b8a6, #2dd4bf); }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        /* Apply staggered delay to buttons */
+        .button-grid > a {
+            opacity: 0; /* Start hidden for animation */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 selection:bg-sky-500 selection:text-white">
+
+    <div class="container mx-auto max-w-3xl text-center px-4 w-full">
+
+        <div class="bg-slate-800/60 backdrop-blur-sm rounded-xl shadow-2xl p-6 sm:p-10 fade-in">
+
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400 mb-10 sm:mb-12 pb-2">
+                فهرس كورس الذكاء الاصطناعي
+            </h1>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-6 button-grid">
+                <a href="https://sites.google.com/nagwa.com/aitools/home" target="_blank" rel="noopener noreferrer"
+                   class="custom-btn btn-sky" style="animation-delay: 0.1s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.993 1.004M12 5a3 3 0 1 1 5.993 1.004M17.61 8H6.391A2.001 2.001 0 0 0 4.408 9.858l-.002.028A2.001 2.001 0 0 0 4.42 11.91l.022.028A2.001 2.001 0 0 0 6.401 14h11.2A2.001 2.001 0 0 0 19.573 12.09l.022-.028A2.001 2.001 0 0 0 19.591 9.94l-.002-.028A2.001 2.001 0 0 0 17.61 8Z"/><path d="M12 14v1"/><path d="M12 19v1"/><path d="M12 14a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2"/><path d="M12 14a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2"/><path d="M5 14a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h2"/><path d="M19 14a2 2 0 0 1 2 2v1a2 2 0 0 1-2 2h-2"/></svg>
+                    <span>Artificial intelligence tools</span>
+                </a>
+
+                <a href="https://eslam250-x3.github.io/PEROMETEN/" target="_blank" rel="noopener noreferrer"
+                   class="custom-btn btn-emerald" style="animation-delay: 0.15s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v7.31"/><path d="M14 9.31V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/><path d="m16 16-1.2-7.2a1 1 0 0 0-.99-.8H10.2a1 1 0 0 0-.99.8L8 16"/><path d="M8.74 19.68A4.5 4.5 0 0 1 15.26 19.68"/></svg>
+                    <span>Prompt Engineering Guide</span>
+                </a>
+
+                <a href="https://eslam250-x3.github.io/LLM-Output-Configuration/" target="_blank" rel="noopener noreferrer"
+                   class="custom-btn btn-purple" style="animation-delay: 0.2s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg>
+                    <span>LLM Output Configuration</span>
+                </a>
+
+                <a href="https://eslam250-x3.github.io/googlevid/" target="_blank" rel="noopener noreferrer"
+                   class="custom-btn btn-rose" style="animation-delay: 0.25s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
+                    <span>google videos</span>
+                </a>
+
+                <a href="https://eslam250-x3.github.io/modelkind/" target="_blank" rel="noopener noreferrer"
+                   class="custom-btn btn-amber" style="animation-delay: 0.3s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><path d="M14 2v6h6"/><path d="m10 16-2 2 2 2"/><path d="m14 16 2 2-2 2"/></svg>
+                    <span>AI models from OpenAI and Google Gemini</span>
+                </a>
+
+                <a href="https://eslam250-x3.github.io/practice/" target="_blank" rel="noopener noreferrer"
+                   class="custom-btn btn-teal" style="animation-delay: 0.35s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17l5-5-5-5"/><path d="m3 6 2-2 2 2"/><path d="m3 12 2-2 2 2"/><path d="m3 18 2-2 2 2"/></svg>
+                    <span>Best Practices</span>
+                </a>
+            </div>
+
+        </div> <footer class="mt-8 text-slate-400 text-xs sm:text-sm fade-in" style="animation-delay: 0.5s;">
+            <p>&copy; <span id="currentYear"></span> جميع الحقوق محفوظة. تصميم إسلام محمد <a href="mailto:eslam.mohamed@nagwa.com" class="text-sky-400 hover:text-sky-300 transition-colors duration-200">eslam.mohamed@nagwa.com</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Update current year in footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        // Apply fade-in animation to buttons with stagger
+        const buttons = document.querySelectorAll('.button-grid > a');
+        buttons.forEach((button, index) => {
+            // Use inline style delay if set, otherwise calculate
+            if (!button.style.animationDelay) {
+                button.style.animationDelay = `${index * 0.05 + 0.1}s`; // Stagger delay
+            }
+            button.classList.add('fade-in');
+        });
+    </script>
+</body>
+</html>
